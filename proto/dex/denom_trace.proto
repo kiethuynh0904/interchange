@@ -1,0 +1,13 @@
+syntax = "proto3";
+package kiethuynh0904.interchange.dex;
+
+option go_package = "github.com/kiethuynh0904/interchange/x/dex/types";
+
+message DenomTrace {
+  string index = 1; 
+  string port = 2; 
+  string channel = 3; 
+  string origin = 4; 
+  
+}
+
