@@ -47374,6 +47374,12 @@ definitions:
         type: string
       priceDenom:
         type: string
+  kiethuynh0904.interchange.dex.MsgSendBuyOrderResponse:
+    type: object
+  kiethuynh0904.interchange.dex.MsgSendCreatePairResponse:
+    type: object
+  kiethuynh0904.interchange.dex.MsgSendSellOrderResponse:
+    type: object
   kiethuynh0904.interchange.dex.Params:
     type: object
     description: Params defines the parameters for the module.
