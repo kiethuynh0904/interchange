@@ -47374,6 +47374,10 @@ definitions:
         type: string
       priceDenom:
         type: string
+  kiethuynh0904.interchange.dex.MsgCancelBuyOrderResponse:
+    type: object
+  kiethuynh0904.interchange.dex.MsgCancelSellOrderResponse:
+    type: object
   kiethuynh0904.interchange.dex.MsgSendBuyOrderResponse:
     type: object
   kiethuynh0904.interchange.dex.MsgSendCreatePairResponse:
