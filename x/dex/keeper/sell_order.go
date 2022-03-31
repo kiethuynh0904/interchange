@@ -79,7 +79,7 @@ func (k Keeper) OnRecvSellOrderPacket(ctx sdk.Context, packet channeltypes.Packe
 		return packetAck, errors.New("the pair doesn't exist")
 	}
 	// Fill sell order
-	remaining, liquidated, gain, _ := book.FillBuyOrder(types.Order{
+	remaining, liquidated, gain, _ := book.FillSellOrder(types.Order{
 		Amount: data.Amount,
 		Price:  data.Price,
 	})

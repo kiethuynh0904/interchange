@@ -1,0 +1,11 @@
+interchanged tx dex send-create-pair dex channel-0 marscoin venuscoin --from alice --chain-id mars --home ~/.mars
+
+interchanged q dex list-sell-order-book --node tcp://localhost:26657
+
+interchanged q dex list-buy-order-book --node tcp://localhost:26659
+
+interchanged tx dex send-sell-order dex channel-0 marscoin 10 venuscoin 15 --from alice --chain-id mars --home ~/.mars
+
+interchanged q bank balances $(interchanged keys show alice -a)
+
+interchanged tx dex send-buy-order dex channel-0 marscoin 10 venuscoin 15 --from bob --chain-id venus --home ~/.venus
